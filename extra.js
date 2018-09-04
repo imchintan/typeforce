@@ -28,7 +28,7 @@ var _BufferN = _LengthN.bind(null, _Buffer)
 var _HexN = _LengthN.bind(null, Hex)
 var _StringN = _LengthN.bind(null, NATIVE.String)
 
-var UINT53_MAX = Math.pow(2, 53) - 1
+var UINT53_MAX = Math.pow(2, 63) - 1
 
 function Finite (value) {
   return typeof value === 'number' && isFinite(value)
